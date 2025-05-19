@@ -10,7 +10,6 @@ public class MenuLateral {
 	
 	private Image iconoBurbuja;
 	private boolean mostrarIconoBurbuja;
-	private long tiempoMostrarBurbuja;
 	
 	public MenuLateral() {
 	    this.iconoBurbuja = new ImageIcon(getClass().getResource("/imagenes/BurbujaProtectora.png")).getImage();
@@ -19,7 +18,6 @@ public class MenuLateral {
 	
 	public void activarIconoBurbuja() {
 	    this.mostrarIconoBurbuja = true;
-	    this.tiempoMostrarBurbuja = System.currentTimeMillis();
 	}
 	
 	public void dibujar(Entorno entorno) {
@@ -51,16 +49,6 @@ public class MenuLateral {
         if (mostrarIconoBurbuja) {
         	entorno.dibujarImagen(iconoBurbuja, 700, 150, 0, 2);
         }
-        
-        
-        if (mostrarIconoBurbuja) {
-            if (System.currentTimeMillis() - tiempoMostrarBurbuja < 3000) { // 3 segundos
-                entorno.dibujarImagen(iconoBurbuja, 700, 250, 0, 1.5); // posición y escala
-            } else {
-                mostrarIconoBurbuja = false;
-            }
-        }
-        
     }
 	
 

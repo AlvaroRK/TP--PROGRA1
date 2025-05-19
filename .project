@@ -14,4 +14,36 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>resources/imagenes/BurbujaProtectora.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/BurbujaProtectora.png</location>
+		</link>
+		<link>
+			<name>resources/imagenes/MagoAbj.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/MagoAbj.png</location>
+		</link>
+		<link>
+			<name>resources/imagenes/MagoArr.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/MagoArr.png</location>
+		</link>
+		<link>
+			<name>resources/imagenes/MagoDer.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/MagoDer.png</location>
+		</link>
+		<link>
+			<name>resources/imagenes/MagoIzq.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/MagoIzq.png</location>
+		</link>
+		<link>
+			<name>resources/imagenes/RocaObs.png</name>
+			<type>1</type>
+			<location>C:/Users/adria/Downloads/RocaObs.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>

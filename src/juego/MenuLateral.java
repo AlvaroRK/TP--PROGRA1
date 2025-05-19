@@ -13,7 +13,7 @@ public class MenuLateral {
 	private long tiempoMostrarBurbuja;
 	
 	public MenuLateral() {
-	    this.iconoBurbuja = new ImageIcon(getClass().getResource("/imagenes/icono_burbuja.png")).getImage();
+	    this.iconoBurbuja = new ImageIcon(getClass().getResource("/imagenes/BurbujaProtectora.png")).getImage();
 	    this.mostrarIconoBurbuja = false;
 	}
 	

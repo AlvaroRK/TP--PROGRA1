@@ -2,20 +2,18 @@ package juego;
 
 import java.awt.Color;
 import java.awt.Image;
-
 import javax.swing.ImageIcon;
 
 import entorno.Entorno;
 
 public class MenuLateral {
 	
-
 	private Image iconoBurbuja;
 	private boolean mostrarIconoBurbuja;
 	private long tiempoMostrarBurbuja;
 	
 	public MenuLateral() {
-	    this.iconoBurbuja = new ImageIcon(getClass().getResource("/imagenes/BurbujaProtectora.png")).getImage();
+	    this.iconoBurbuja = new ImageIcon(getClass().getResource("/imagenes/icono_burbuja.png")).getImage();
 	    this.mostrarIconoBurbuja = false;
 	}
 	
@@ -54,7 +52,17 @@ public class MenuLateral {
         	entorno.dibujarImagen(iconoBurbuja, 700, 150, 0, 2);
         }
         
+        
+        if (mostrarIconoBurbuja) {
+            if (System.currentTimeMillis() - tiempoMostrarBurbuja < 3000) { // 3 segundos
+                entorno.dibujarImagen(iconoBurbuja, 700, 250, 0, 1.5); // posición y escala
+            } else {
+                mostrarIconoBurbuja = false;
+            }
+        }
+        
     }
+	
 
     public void manejarEntrada(Entorno entorno) {
         if (entorno.estaPresionada('1')) {

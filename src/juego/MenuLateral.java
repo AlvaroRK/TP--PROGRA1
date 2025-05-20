@@ -51,7 +51,6 @@ public class MenuLateral {
         }
     }
 	
-
     public void manejarEntrada(Entorno entorno) {
         if (entorno.estaPresionada('1')) {
             System.out.println("Habilidad 1");

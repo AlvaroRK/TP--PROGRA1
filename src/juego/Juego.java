@@ -63,13 +63,9 @@ public class Juego extends InterfaceJuego
 	        personaje.moverAbajo();
 	    }
 	    
-	    
-	    
-	    
 	    if (entorno.estaPresionada('3')) {
 	        menu.activarIconoBurbuja();
 	    }
-	    
 	    
 		personaje.dibujar(entorno);
 		
